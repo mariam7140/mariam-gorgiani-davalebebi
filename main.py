@@ -1,7 +1,6 @@
 from admin import admin_loop
 from davaleba_16.common import process_user_input
 
-
 def list_menu_items():
     print("1. list sessions")
     print("2. search movie")

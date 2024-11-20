@@ -3,7 +3,6 @@ import random
 from davaleba_16.common import process_user_input
 from davaleba_16.db import sessions
 
-
 def list_admin_menu_items():
     print("1. List all sessions")
     print("2. Remove session")
@@ -22,7 +21,6 @@ def session_exists(session_id):
         if session["session_id"] == session_id:
             return True
     return False
-
 
 def add_session():
     print("Adding a new session")
@@ -88,7 +86,6 @@ def edit_session():
             return
     print(f"Session ID {session_id} not found. Please try again.")
 
-
 def list_sessions():
     print("Available sessions:")
     if not sessions:
@@ -102,7 +99,6 @@ def list_sessions():
         print(f"Room length: {session['room_length']}")
         print(f"Room width: {session['room_width']}")
         print(f"Capacity: {session['capacity']}")
-
 
 def admin_loop():
     greetings()
